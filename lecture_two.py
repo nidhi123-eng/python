@@ -1,0 +1,110 @@
+#strings & conditional statements 
+
+'''
+str1= "this is a string"
+str2='nidhi barad'
+str3="""this is a string"""
+
+str1="this is a string.\nnidhi barad"# diff lines
+print(str1)
+
+#join strings
+str1="welcome to"
+str2="niniiiverse"
+print(str1+ " " +str2)
+
+#check the length of string 
+str1="welcome to"
+len1=len(str1)
+print(len1)
+
+str2="niniiiverse"
+len2=len(str2)
+print(len2)
+
+final_str=str1+ " " +str2
+print(final_str)
+print(len(final_str))
+
+#indexing of string
+str="nidhi"
+print(str[3])
+
+#slicing
+str="nidhi"
+print(str[0:3])#positive index
+print(str[ :4])
+print(str[0:len(str)])
+print(str[-3:-1])#negative index
+
+#string function
+str="i am student of msc"
+print(str.endswith("ml")) 
+print(str.capitalize()) 
+print(str.replace("msc","msc ai & ml"))
+print(str.find("student"))
+print(str.count("m"))        
+
+#practise
+#WAP to input users first name and print its length.
+name=input("enter your first name:")
+print("length of your name is:",len(name))
+
+#WAP to find occurence of '$' in a string.
+str="$i am a trying $ to best for improving myself$"
+print(str.count("$"))
+
+#conditional statments
+a=5
+b=1
+if(a>b):
+    print("a is greater than b")
+elif(a<b):
+    print("a is less than b")
+else:
+    print("a is equal to b")
+
+#nestingage=int(input("enter your age:"))
+if(age>=18):
+    if(age>=18 and  age<=60):
+        print("you are eligible for voting")
+    else:
+        print("you are not eligible for voting")
+else:
+    print("you go home !")
+
+#pratise
+#WAP to check if a number entered by user is odd or even.
+num=int(input("enter a number:"))
+if(num%2==0):
+    print("number is even")
+else:
+    print("number is odd")
+
+#WAP to find the largest of 3 number entered by the users.
+num1=int(input("enter first number:"))
+num2=int(input("enter second number:"))
+num3=int(input("enter third number:"))
+
+if(num1>num2 and num1>num3):
+    print("num1 is largest number",num1)
+elif(num2>num1):
+    print("num2 is largest number",num2)
+else:
+    print("num3 is largest number",num3)
+
+#WAP to check if a number is a multiple of 7 or not.
+num=int(input("enter a number:"))
+if(num%7==0):
+    print("number is multiple of 7")
+else:
+    print("number is not multiple of 7")
+'''
+
+
+
+
+
+
+
+  
