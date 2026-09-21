@@ -1,0 +1,223 @@
+#Introduction , variables & data types
+
+'''
+print ("Hello world")
+
+print ("my name is Nidhi.")
+print("my age is 20.")
+
+print ("my name is Nidhi.","my age is 20.")
+print(48)
+print(10+10)
+
+name="Nidhi"  #string
+age=23
+price=25.99
+print("name")
+print(name)
+print("my name is :",name)
+print("my age is:",age)
+
+age=26
+age2=age
+print(age2)
+
+name ="Nidhi"
+print(type(name))
+
+age=23
+old=False
+a=None 
+print(type(old))
+print(type(a))
+
+a=2
+b=3
+sum=a+b
+print(sum)
+
+a=1000
+b=500
+diff=a-b
+print(diff)
+
+#taking input from user and printing it
+---------------------------------------------
+name=input("name:")
+
+print(name)
+
+name=input("name :")
+age=int(input("age :"))
+price=float(input("price :"))
+print("my name is", name,"and I am",age,"years old")
+
+#conditional statements [if-elif-else]
+--------------------------------------------
+#traffic light program
+--------------------------
+light=input("light")
+if (light=="red"):
+    print("stop")
+elif(light=="yellow"):
+    print("wait")
+elif(light=="green"):
+    print("go")
+else:
+    print("light is broken")
+
+#students marks 
+----------------------
+marks=(input("marks: "))
+if(marks >= 90):
+    print("A1 Grade")
+elif(marks>=80 and marks<90):
+    print("A2 Grade")
+elif(marks>=70 and marks<80):
+    print("B1 Grade")
+elif(marks>=60 and marks<70):
+    print("B2 Grade")
+else:
+    print("Fail")
+
+#practise 
+------------------
+
+A=int(input("A:"))
+G=input("M/F:")
+if((A == 1 or A == 2)and G == "M"):
+    print("fee is 100")
+elif(A == 3 or A ==4 or G == "F"):
+    print("fee is 200")
+elif(A == 5 and G == "M"):
+     print("fee is 300")
+else:
+    print("no fees")
+
+#single line if/ternary operator
+--------------------------------------
+#syntax [<var>=<var1>if <condition> else <var2>]
+--------------------------------------------------------
+
+food=input("food:")
+eat="yes" if food == "pizza" else "no"
+print(eat)
+
+#syntax [<stt1> if <condition> else <stt2>]
+--------------------------------------------------
+
+food=input("food:")
+print("sweet") if food == "cake" or food=="jalebi" else print("not sweet")
+
+#arithmetic operator
+--------------------------
+a=3
+b=2
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b) #remainder
+print(a%b) #a^b
+
+#relational operator
+--------------------------
+a=50
+b=20
+
+print(a==b) #equal
+print(a!=b) #notequal 
+print(a>b) #greaterthan
+print(a<b) #lessthan
+print(a>=b) #greatherthan equal
+print(a<=b) #lessthan equal
+print(a**b) 
+
+#assignment operator
+------------------------
+num = 10
+#num = num + 10 #skip if u want to use assignment operator
+num += 10 #assignment opreator
+num -+ 5
+num /= 5
+num %= 2
+num //= 2
+num **= 2
+print("num:",num)
+
+#logical operator
+--------------------------
+a = 50
+b = 30
+print(not False) #not operator
+print(not(a > b))
+
+val1 =True
+val2 = False
+print("AND operatoer :",val1 and val2)
+
+print("OR operatoer :",val1 or val2)
+
+#type conversion
+-------------------
+a = 2 #int
+b = 4.25 #float 
+sum = a + b
+print(sum)
+
+#type casting
+-------------------
+a =int("2")
+b=4.25
+print(type (a))
+print(a + b)
+
+#input in python from user
+--------------------------------
+
+name = input("enter your name :")
+age = int(input("enter your age:"))
+marks= float(input("enter your marks :"))
+print("welcome",name)
+print("age",age)
+print("marks",marks)
+
+val = input ("enter some value:")
+print(type(val),val)
+
+int("5")
+val= int(input("enter some value:"))
+val= float(input("enter some value:"))
+print(type(val),val)
+
+#practise
+-----------
+#write a program to input two number and print their sum
+-----------------------------------------------------------
+
+num1=int(input("enter your first number:"))
+num2=int(input("enter your second number:"))
+print("sum =",num1+num2)
+
+#write a programto inputside of a square and print its area.
+--------------------------------------------------------------------
+
+side=float(input("enter square side:"))
+print("area=",side*side)
+print("area=",side**2) # 2nd way to calulate area of square
+
+#WAP to input 2 floating point numbers & print their average.
+---------------------------------------------------------------
+
+a=float(input("enter first number:"))
+b=float(input("enter second number:"))
+print("average=", (a+b)/2)
+
+
+#WAP to input 2 int numbers ,a and b.print True if a is grater than or equal to b.
+----------------------------------------------------------------------------------------
+
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+print(a>=b)
+''' 
